@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css CheckBox</title>
+    <style>
+        h1{
+            color: white;
+            background-color: teal;
+            text-align: center;
+            padding: 10px;
+            font-size: 2rem;
+        }
+        .CssCheckBox{
+           padding: 20px;
+           margin: 50px;
+           box-sizing: border-box;
+           background-color:green;
+           font-family: 'Courier New', Courier, monospace;
+           
+        }
+        .CssCheckBox>form>h2{
+            padding: 10px;
+            background-color:blueviolet;
+            color: white;
+
+            
+        }
+        .CssCheckBox:hover{
+            background: linear-gradient(45deg, #a818cc, #90d118);
+            color: white;
+            transition: all 1s ease-in-out;
+
+        }
+        .CssCheckBox>form>h2{
+            color: white;
+            background-color: rgb(136, 51, 51);
+            transition: all 0.3s ease-in;
+
+        }
+        .menu{
+            background-color: #a818cc;
+            padding: 20px;
+            margin: 50px;
+            font-style: italic;
+        }
+        .menu>form>h2{
+            background-color: chartreuse;
+            padding: 10px;
+            color: red;
+
+
+        }
+        .menu:hover{
+            transition: all 3s ease-out;
+            background: linear-gradient(50deg #0cd3b8, #a711e2d0);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            animation: telugu 10s infinite;
+        }
+        @keyframes telugu{
+            0%{
+                top: 0px;
+                left: 600px;
+                background-color: black;
+                color: white;
+            }
+            50%{
+               
+                top: 400px;
+                left: 600px;
+                background-color: chartreuse;
+                color: deeppink;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>CheckBox And Radio Button</h1>
+    <section class="CssCheckBox"> 
+        
+        <form action="">
+            
+            <h2>Radio Button</h2>
+              
+            <h3>Gender</h3>
+                <input type="radio" id="male" value="male" name="gender">
+                <label for="">Male</label>
+    
+                <input type="radio" id="female" value="female" name="gender">
+                <label for="">Female</label>
+    
+        </form>
+    </section>
+    
+    <section class="menu"> 
+                    
+        <form action="">
+            <h2>Check Box</h2>
+            <h3>Language</h3>
+                <label for="">Kannada</label>
+                    <input type="checkbox" value="kannada" name="kannada" id="kannada">
+    
+                    <label for="">English</label>
+                    <input type="checkbox" value="English" name="English" id="English">
+    
+                    <label for="">Hindi</label>
+                    <input type="checkbox" value="Hindi" name="Hindi" id="Hindi">
+    
+                </form>
+    
+    </section>
+
+       
+</body>
+</html>
